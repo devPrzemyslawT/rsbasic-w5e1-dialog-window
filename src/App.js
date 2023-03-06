@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import CustomizedDialogs from "./Components/Dialog/dialog";
+import { dialog1Title, dialog1Content } from "./Utils/data/data";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className='App'>
+			<CustomizedDialogs
+				title={dialog1Title}
+				content={dialog1Content}></CustomizedDialogs>
+		</div>
+	);
 }
 
 export default App;
